@@ -1,15 +1,15 @@
 int buttonPin[] = {2, 3};
 int ledPin[] = {8, 9};
 int turnCount = 0;
-volatile bool buttonClicked = false;
-volatile bool gameStarted = false;
+bool buttonClicked = false;
+bool gameStarted = false;
 
 const int maxTurns = 60;
 byte randomArray[maxTurns];
 byte inputArray[maxTurns];
 
 boolean playedThisTurn = false;
-volatile int buttonPressed = -1;
+int buttonPressed = -1;
 
 const unsigned long timeLimit = 3000;
 
